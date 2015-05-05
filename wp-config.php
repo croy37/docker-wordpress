@@ -1,5 +1,6 @@
 <?php
 
+#Use $_SERVER or $_ENV if this doesn't work
 define('DB_HOST', getenv('DB_HOST', 'localhost'));
 define('DB_USER', getenv('DB_USER', 'root'));
 define('DB_PASSWORD', getenv('DB_PASS', 'root'));
