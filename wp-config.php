@@ -1,12 +1,9 @@
 <?php
 
-$dsn=$_ENV['DATABASE_URL'];
-preg_match( '|([a-z0-9]+)://([^:]*)(:(.*))?@([A-Za-z0-9\.-]*)(:([0-9]*))?(/([0-9a-zA-Z_/\.-]*))|', $dsn, $matches);
-
-define('DB_HOST', $matches[5]);
-define('DB_USER', $matches[2]);
-define('DB_PASSWORD', $matches[4]);
-define('DB_NAME',$matches[9]);
+define('DB_HOST', env('DB_HOST', 'localhost'));
+define('DB_USER', env('DB_USER', 'root'));
+define('DB_PASSWORD', env('DB_PASS', 'root'));
+define('DB_NAME',env('DB_NAME', 'db'));
 
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', ''     );
