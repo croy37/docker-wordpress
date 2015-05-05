@@ -1,9 +1,9 @@
 <?php
 
-define('DB_HOST', $_ENV['DB_HOST']);
-define('DB_USER', $_ENV['DB_USER']);
-define('DB_PASSWORD', $_ENV['DB_PASS']);
-define('DB_NAME',$_ENV['DB_NAME']);
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASS'));
+define('DB_NAME', getenv('DB_NAME'));
 
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', ''     );
