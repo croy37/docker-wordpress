@@ -1,10 +1,10 @@
 <?php
 
 #Use $_SERVER or $_ENV if this doesn't work
-define('DB_HOST', getenv('DB_HOST', 'localhost'));
-define('DB_USER', getenv('DB_USER', 'root'));
-define('DB_PASSWORD', getenv('DB_PASS', 'root'));
-define('DB_NAME',getenv('DB_NAME', 'db'));
+define('DB_HOST', getenv('DB_HOST'));
+define('DB_USER', getenv('DB_USER'));
+define('DB_PASSWORD', getenv('DB_PASS'));
+define('DB_NAME',getenv('DB_NAME'));
 
 define( 'DB_CHARSET', 'utf8' );
 define( 'DB_COLLATE', ''     );
